@@ -11,6 +11,7 @@ export default function App() {
   );
 }
 
+// Teste
 const styles = StyleSheet.create({
   container: {
     flex: 1,

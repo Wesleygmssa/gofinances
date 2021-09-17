@@ -1,9 +1,15 @@
-import { Dashboard } from './src/pages/Dashboard';
+import { Dashboard } from "./src/pages/Dashboard";
+import { ThemeProvider } from "styled-components";
 
+import theme from "./src/global/styles/theme";
 export default function App() {
   return (
- <Dashboard/>
+    /**
+     * Disponibilizando thema para toda aplicação
+     * Dessa forma nosso tema fica disponival em toda aplicação
+     */
+    <ThemeProvider theme={theme}>
+      <Dashboard />
+    </ThemeProvider>
   );
 }
-
-
